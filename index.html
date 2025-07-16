@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stevo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>stevo - Portfolio</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Portfolio</div>
+        <button class="mobile-nav-toggle">☰</button>
+        <nav>
+            <button class="close-menu">×</button>
+            <ul id="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <span class="hover-indicator"></span>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+   <section class="hero" id="home">
+    <div class="stars" id="stars"></div>
+    <div class="hero-content">
+        <p class="greeting">Hi There,</p>
+       <h1 class="typing">
+  <span class="fixed-text">I Am </span><span class="dynamic-text"></span>
+</h1>
+        <p class="hero-text">Frontend & Mobile App Developer with a strong background in UI/UX design, web development, and computer systems. Skilled in web design, networking, mobile UI, and computer maintenance. I turn ideas into smooth, creative digital experiences.</p>
+        
+        <a href="cv/stevo_CV.pdf" class="cta-btn">download CV</a>
+    </div>
+    <div class="hero-image">
+        <!-- The image tag is kept but won't be visible - we're using the ::before pseudo-element instead -->
+        <img src="image/stevo1.png" alt="Developer Profile">
+    </div>
+</section>
+<!-- About Section -->
+<section id="about">
+    <h2 class="section-title">ABOUT <span>ME</span></h2>
+    <div class="about-container">
+        <div class="about-image">
+            <img src="image/stevouzi.jpg" alt="image">
+        </div>
+        <div class="about-content">
+            <h3 class="greeting-large">Hi There! I'm Steven ISHIMWE</h3>
+            <h4 class="profession">IT Professional</h4>
+            <p class="about-text">
+            I am an ambitious and creative IT professional with strong skills in web development, computer networking, and cybersecurity. I enjoy building clean and user-friendly websites, working on innovative IoT projects, and exploring new technologies to solve real-world problems.
+
+My skillset encompasses a wide range of technologies, allowing me to take projects from concept to completion. I’m proficient in HTML, CSS, JavaScript, PHP, and Python, and I have hands-on experience with networking protocols, cybersecurity practices, and Linux-based systems. I also work with databases like MySQL and use tools like Wireshark and Cisco Packet Tracer to simulate and secure networks.
+
+Driven by curiosity and continuous learning, I aim to grow as a reliable IT expert who not only solves technical issues but also builds impactful solutions.
+            </p>
+            <div class="personal-info">
+                <div class="info-item">
+                    <span class="info-label">Birthday</span>
+                    <span class="info-value">: April 24, 2003</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Phone</span>
+                    <span class="info-value">: +250 780959065</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email</span>
+                    <span class="info-value">: stevenishimwe28@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">From</span>
+                    <span class="info-value">: Kigali - Rwanda</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Language</span>
+                    <span class="info-value">: English, Kinyarwanda</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Freelance</span>
+                    <span class="info-value">: Available</span>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    <!-- ======= Services Section ======= -->
+  <section id="services" class="services">
+    <h2 class="section-title">My <span>Services</span></h2>
+    <div class="services-container">
+      <div class="service-box">
+        <i class="fas fa-code service-icon"></i>
+        <h3>Web Development</h3>
+        <p>Modern and responsive websites using HTML, CSS, JavaScript, and frameworks.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-paint-brush service-icon"></i>
+        <h3>UI/UX Design</h3>
+        <p>Creative and user-friendly interfaces tailored to the user experience.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-mobile-alt service-icon"></i>
+        <h3>Mobile App Design</h3>
+        <p>Designs for cross-platform mobile applications with sleek interfaces.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-database service-icon"></i>
+        <h3>Backend Support</h3>
+        <p>Database integration and backend logic using secure methods.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-network-wired service-icon"></i>
+        <h3>Networking</h3>
+        <p>Reliable setup and repair of Wi-Fi and LAN networks for homes and businesses, including routers, switches, and security.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-tools service-icon"></i>
+        <h3>Computer Maintenance</h3>
+        <p>Fixing hardware issues like screens, storage, and overheating to keep your PC running smoothly.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-laptop-code service-icon"></i>
+        <h3>Software Support</h3>
+        <p>We fix bugs, remove viruses, update software, and optimize performance to keep your system fast and secure.</p>
+      </div>
+      <div class="service-box">
+        <i class="fas fa-recycle service-icon"></i>
+        <h3>Data Recovery</h3>
+        <p>Recover lost or deleted files from hard drives, SSDs, USB drives, and more even after crashes or corruption.</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2 class="section-title">MY <span>PORTFOLIO</span></h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <img src="image/mugisha.png" alt="Portfolio Project 1">
+                <div class="portfolio-item">
+                    <h3>"Interactive Design Trends"</h3>
+                    <p>Modern and engaging user interface design with attention-grabbing motion elements.</p>
+                    <a href="#" class="portfolio-btn">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="image/mugisha.png" alt="Portfolio Project 2">
+                <div class="portfolio-item">
+                    <h3>"Creative UI/UX Approaches"</h3>
+                    <p>Implemented innovative user interface and digital interaction solutions.</p>
+                    <a href="#" class="portfolio-btn">View Project</a>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <img src="image/mugisha.png" alt="Portfolio Project 3">
+                <div class="portfolio-item">
+                    <h3>"Visual Storytelling Animation"</h3>
+                    <p>The power of captivating visual content to connect deeply with your audience.</p>
+                    <a href="#" class="portfolio-btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2 class="section-title">MY <span>RESUME</span></h2>
+        
+        </div>
+    </section>
+
+    <!-- My Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">MY <span>SKILLS</span></h2>
+       
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog">
+        <h2 class="section-title">MY <span>BLOG</span></h2>
+        <div class="blog-grid">
+            <div class="blog-card">
+                <img src="image/ikivera.png" alt="Blog Post 1">
+                <div class="blog-content">
+                    <h3 class="blog-title">"Web Design Evolution Insights"</h3>
+                    <p class="blog-meta">June 22, 2024 | Design</p>
+                    <p>Exploring the journey of web design from its humble beginnings to modern interactive experiences.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="image/ikivera.png" alt="Blog Post 2">
+                <div class="blog-content">
+                    <h3 class="blog-title">"Responsive Design Innovations"</h3>
+                    <p class="blog-meta">May 18, 2024 | Development</p>
+                    <p>How adaptive layouts are revolutionizing user experience across multiple devices.</p>
+                </div>
+            </div>
+            <div class="blog-card">
+                <img src="image/ikivera.png" alt="Blog Post 3">
+                <div class="blog-content">
+                    <h3 class="blog-title">"User-Centric Web Solutions"</h3>
+                    <p class="blog-meta">April 05, 2024 | UX Design</p>
+                    <p>The importance of putting users first in all aspects of web design and development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">CONTACT <span>ME</span></h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h3>Just say Hello</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Contact Info</h3>
+                <p>I’d love to hear from you! Whether you have a question about my work, want to collaborate on a project, or just want to connect, don’t hesitate to get in touch.</p>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>stevenishimwe28@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+250 739803771</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+250 780959065</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Kigali Rwanda</p>
+                </div>
+                <a href="#" class="social-link">Visit my social profile and get connected</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+<div class="social-links">
+ <a href="https://www.linkedin.com/in/your-username/" target="_blank"><i class="fab fa-linkedin"></i></a> <!-- LinkedIn --> 
+  <a href="https://twitter.com/your_twitter_handle" target="_blank"><i class="fab fa-twitter"></i></a>     <!-- Twitter -->
+  <a href="https://instagram.com/your_instagram_username" target="_blank"><i class="fab fa-instagram"></i></a>  <!-- Instagram -->
+  <a href="https://www.tiktok.com/@your_tiktok_username" target="_blank"><i class="fab fa-tiktok"></i></a>  <!-- TikTok -->
+  <a href="https://www.facebook.com/your.facebook.profile" target="_blank"><i class="fab fa-facebook"></i></a>  <!-- Facebook -->
+  <a href="https://www.youtube.com/@your_channel_name" target="_blank"><i class="fab fa-youtube"></i></a>  <!-- YouTube -->
+   <a href="mailto:stevenishimwe28@gmail.com"><i class="fas fa-envelope"></i></a>  <!-- Email -->
+</div>
+
+        <p class="copyright">© 2025 Designed by Steven. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const words = ["Frontend Developer", "Web Designer", "Networking", "Mobile App Designer"];
+  let i = 0, j = 0, currentWord = '', isDeleting = false;
+  const typing = document.querySelector('.dynamic-text');
+
+  function type() {
+    if (i < words.length) {
+      if (!isDeleting && j <= words[i].length) {
+        currentWord = words[i].substring(0, j++);
+        typing.textContent = currentWord;
+      } else if (isDeleting && j > 0) {
+        currentWord = words[i].substring(0, j--);
+        typing.textContent = currentWord;
+      }
+
+      if (j === words[i].length) {
+        isDeleting = true;
+      }
+
+      if (isDeleting && j === 0) {
+        isDeleting = false;
+        i++;
+      }
+
+      if (i === words.length) i = 0;
+      setTimeout(type, isDeleting ? 60 : 120);
+    }
+  }
+
+  type();
+
+        // Script for mobile navigation toggle
+        document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
+            document.querySelector('nav').classList.add('show');
+            document.querySelector('.close-menu').classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+        });
+        
+        // Close menu
+        document.querySelector('.close-menu').addEventListener('click', function() {
+            document.querySelector('nav').classList.remove('show');
+            document.querySelector('.close-menu').classList.remove('show');
+            document.body.style.overflow = 'auto'; // Re-enable scrolling
+        });
+        
+        // Close menu when clicking a link
+        const navLinks = document.querySelectorAll('#nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 991) {
+                    document.querySelector('nav').classList.remove('show');
+                    document.querySelector('.close-menu').classList.remove('show');
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+
+        // Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.getElementById('nav-menu').classList.remove('active');
+            });
+        });
+
+        // Create stars in the background
+        function createStars() {
+            const stars = document.getElementById('stars');
+            const count = 100;
+            
+            for (let i = 0; i < count; i++) {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                
+                // Random position
+                const x = Math.random() * 100;
+                const y = Math.random() * 100;
+                
+                // Random animation duration and delay
+                const duration = 3 + Math.random() * 4;
+                const delay = Math.random() * 5;
+                
+                star.style.left = `${x}%`;
+                star.style.top = `${y}%`;
+                star.style.setProperty('--duration', `${duration}s`);
+                star.style.setProperty('--delay', `${delay}s`);
+                
+                stars.appendChild(star);
+            }
+        }
+
+        // Initialize stars
+        window.addEventListener('DOMContentLoaded', createStars);
+    </script>
+</body>
+</html>
