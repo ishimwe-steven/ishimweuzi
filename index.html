@@ -221,23 +221,30 @@ Driven by curiosity and continuous learning, I aim to grow as a reliable IT expe
         <div class="contact-container">
             <div class="contact-form">
                 <h3>Just say Hello</h3>
-                <form>
-                    <div class="form-row">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Subject">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                 <form id="contact-form">
+  <div class="form-row">
+    <div class="form-group">
+      <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <input type="text" name="subject" class="form-control" placeholder="Your Subject" required>
+  </div>
+  <div class="form-group">
+    <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
+  </div>
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
+
+<!-- Success Popup -->
+<div id="popup">
+  <p> Your message was sent successfully!</p>
+  <button onclick="closePopup()">OK</button>
+</div>
+
             </div>
             <div class="contact-info">
                 <h3>Contact Info</h3>
@@ -346,6 +353,42 @@ Driven by curiosity and continuous learning, I aim to grow as a reliable IT expe
                 document.getElementById('nav-menu').classList.remove('active');
             });
         });
+
+        // sendig the message popup
+        const form = document.getElementById('contact-form');
+  const popup = document.getElementById('popup');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    fetch('https://formspree.io/f/xldldeyz', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    })
+    .then(response => {
+      if (response.ok) {
+        popup.style.display = 'block';
+        form.reset();
+      } else {
+        alert("Oops! Something went wrong.");
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("Network error. Try again.");
+    });
+  });
+
+  function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+    window.location.href = "#home"; // or use window.scrollTo(0, 0);
+  }
+
 
         // Create stars in the background
         function createStars() {

@@ -1068,3 +1068,55 @@
                 transform: scale(1);
             }
         }
+
+        /* Popup Overlay */
+#popup {
+  display: none;
+  position: fixed;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1E1F29;
+  color: #fff;
+  padding: 2rem 2.5rem;
+  max-width: 90%;
+  width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Popup Message */
+#popup p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* OK Button */
+#popup button {
+  background: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.8rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Button Hover Effect */
+#popup button:hover {
+  background: #45A049;
+}
+@media (max-width: 400px) {
+  #popup {
+    padding: 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  #popup button {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
