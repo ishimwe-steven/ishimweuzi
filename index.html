@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stevo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <title>stevo - Portfolio</title>
     <style>
         
@@ -145,43 +149,130 @@ Driven by curiosity and continuous learning, I aim to grow as a reliable IT expe
         <h2 class="section-title">MY <span>PORTFOLIO</span></h2>
         <div class="portfolio-grid">
             <div class="portfolio-card">
-                <img src="image/mugisha.png" alt="Portfolio Project 1">
+                <img src="image/phone.jpg" alt="Portfolio Project 1">
                 <div class="portfolio-item">
-                    <h3>"Interactive Design Trends"</h3>
-                    <p>Modern and engaging user interface design with attention-grabbing motion elements.</p>
-                    <a href="#" class="portfolio-btn">View Project</a>
+                    <h3>"Smart Banking App"</h3>
+                    <p>A secure mobile banking application that allows users to manage accounts, send money, view transaction history, and perform deposits and withdrawals  all in real-time.</p>
+                    
+                    <div class="project-tech">
+                        <span>Jetpack Compose</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+                        <span>Retrofit</span>
+                    </div>
                 </div>
             </div>
             <div class="portfolio-card">
                 <img src="image/mugisha.png" alt="Portfolio Project 2">
                 <div class="portfolio-item">
-                    <h3>"Creative UI/UX Approaches"</h3>
-                    <p>Implemented innovative user interface and digital interaction solutions.</p>
-                    <a href="#" class="portfolio-btn">View Project</a>
+                   <h3>"BK Bank Web App"</h3>
+                   <p>A user-friendly web-based banking system. It supports customer registration, loan processing, secure transactions, and real-time account management functionalities.</p>
+    
+                   <div class="project-tech">
+                      <span>JSP</span>
+                      <span>JDBC</span>
+                      <span>Apache Derby</span>
+                       <span>HTML/CSS</span>
+                   </div>
                 </div>
             </div>
             <div class="portfolio-card">
-                <img src="image/mugisha.png" alt="Portfolio Project 3">
+                <img src="image/uzi.png" alt="Portfolio Project 3">
                 <div class="portfolio-item">
-                    <h3>"Visual Storytelling Animation"</h3>
-                    <p>The power of captivating visual content to connect deeply with your audience.</p>
-                    <a href="#" class="portfolio-btn">View Project</a>
+                <h3>"QR Smart Entry System"</h3>
+
+                <p>An IoT-based security and access control system that uses QR codes to manage student laptop entries at the university gate. It enhances device tracking, improves entry efficiency, and sends real-time SMS alerts for added security.</p>
+
+
+                <div class="project-tech">
+
+                  <span>IoT</span>
+
+                  <span>QR Code</span>
+
+                  <span>PHP</span>
+
+                  <span>MySQL</span>
+
+                  <span>HTML/CSS</span>
+
                 </div>
+
             </div>
         </div>
     </section>
 
     <!-- Resume Section -->
-    <section id="resume">
-        <h2 class="section-title">MY <span>RESUME</span></h2>
-        
-        </div>
-    </section>
-
-    <!-- My Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">MY <span>SKILLS</span></h2>
+     <section id="resume" class="resume-section">
+       <h2 class="section-title">MY <span>Resume</span></h2>
        
+        <div class="resume-content">
+            <div class="resume-text">
+                <h3 class="timeline-title">Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - 2025 - Present</div>
+                        <div class="timeline-content">
+                            <h4>currently studying for Advanced Diploma in IT</h4>
+                            <h5>RP Musanze college</h5>
+                            <p>Currently pursuing Advanced Diploma in Information Technology, and waiting fo graduation in 2026 with a focus on acquiring comprehensive skillst</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2019 - 2022</div>
+                        <div class="timeline-content">
+                            <h4>A2 Certificate in Networking</h4>
+                            <h5>World Mission TIVET School</h5>
+                            <p>I completed 3 years of advanced level studies in networking, where I learned fundamental concepts such as network design, protocols, and troubleshooting techniques.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2024</div>
+                        <div class="timeline-content">
+                            <h4>Certificate in Network Operation</h4>
+                            <h5>Internet Society</h5>
+                            <p>I studied Introduction to Network Operations with an emphasis on Linux systems, gaining hands-on experience in network configuration, monitoring, and troubleshooting using Linux command-line tools and services.</p>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="timeline-container">
+                <h3 class="timeline-title">Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2025 - Present</div>
+                        <div class="timeline-content">
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2020 - 2023</div>
+                        <div class="timeline-content">
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2018 - 2020</div>
+                        <div class="timeline-content">
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Blog Section -->
@@ -285,139 +376,198 @@ Driven by curiosity and continuous learning, I aim to grow as a reliable IT expe
         <p class="copyright">© 2025 Designed by Steven. All Rights Reserved.</p>
     </footer>
 
-    <script>
-        const words = ["Frontend Developer", "Web Designer", "Networking", "Mobile App Designer"];
-  let i = 0, j = 0, currentWord = '', isDeleting = false;
+   <script>
+  // Helper: check if element is in viewport
+  const isInViewport = (element) => {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  };
+
+  // Counter animation
+  function animateCounters() {
+    const counters = document.querySelectorAll(".counter");
+    const speed = 200;
+    counters.forEach((counter) => {
+      if (isInViewport(counter) && !counter.classList.contains("animated")) {
+        counter.classList.add("animated");
+        const target = +counter.getAttribute("data-target");
+        let count = +counter.innerText;
+        const increment = target / speed;
+
+        const updateCount = () => {
+          count += increment;
+          if (count < target) {
+            counter.innerText = Math.ceil(count);
+            setTimeout(updateCount, 10);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      }
+    });
+  }
+
+  // Timeline animation
+  function animateTimeline() {
+    const timelineItems = document.querySelectorAll(".timeline-item");
+    timelineItems.forEach((item) => {
+      if (isInViewport(item) && !item.classList.contains("show")) {
+        item.classList.add("show");
+      }
+    });
+  }
+
+  // Typing effect
+  const words = ["Frontend Developer", "Web Designer", "Networking", "Mobile App Designer"];
+  let i = 0, j = 0, isDeleting = false;
   const typing = document.querySelector('.dynamic-text');
 
   function type() {
     if (i < words.length) {
       if (!isDeleting && j <= words[i].length) {
-        currentWord = words[i].substring(0, j++);
-        typing.textContent = currentWord;
+        typing.textContent = words[i].substring(0, j++);
       } else if (isDeleting && j > 0) {
-        currentWord = words[i].substring(0, j--);
-        typing.textContent = currentWord;
+        typing.textContent = words[i].substring(0, j--);
       }
 
-      if (j === words[i].length) {
-        isDeleting = true;
-      }
-
+      if (j === words[i].length) isDeleting = true;
       if (isDeleting && j === 0) {
         isDeleting = false;
-        i++;
+        i = (i + 1) % words.length;
       }
 
-      if (i === words.length) i = 0;
       setTimeout(type, isDeleting ? 60 : 120);
     }
   }
 
-  type();
+  // Create animated stars (with duration + delay set directly)
+  function createStars() {
+    const stars = document.getElementById('stars');
+    if (!stars) return;
 
-        // Script for mobile navigation toggle
-        document.querySelector('.mobile-nav-toggle').addEventListener('click', function() {
-            document.querySelector('nav').classList.add('show');
-            document.querySelector('.close-menu').classList.add('show');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
-        });
-        
-        // Close menu
-        document.querySelector('.close-menu').addEventListener('click', function() {
-            document.querySelector('nav').classList.remove('show');
-            document.querySelector('.close-menu').classList.remove('show');
-            document.body.style.overflow = 'auto'; // Re-enable scrolling
-        });
-        
-        // Close menu when clicking a link
-        const navLinks = document.querySelectorAll('#nav-menu a');
-        navLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                if (window.innerWidth <= 991) {
-                    document.querySelector('nav').classList.remove('show');
-                    document.querySelector('.close-menu').classList.remove('show');
-                    document.body.style.overflow = 'auto';
-                }
-            });
-        });
+    const count = 100;
+    for (let i = 0; i < count; i++) {
+      const star = document.createElement('div');
+      star.classList.add('star');
 
-        // Smooth Scrolling for Navigation Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                // Close mobile menu if open
-                document.getElementById('nav-menu').classList.remove('active');
-            });
-        });
+      const x = Math.random() * 100;
+      const y = Math.random() * 100;
+      const duration = 3 + Math.random() * 4;
+      const delay = Math.random() * 5;
 
-        // sendig the message popup
-        const form = document.getElementById('contact-form');
+      star.style.left = `${x}%`;
+      star.style.top = `${y}%`;
+      star.style.animationDuration = `${duration}s`;
+      star.style.animationDelay = `${delay}s`;
+
+      stars.appendChild(star);
+    }
+  }
+
+  // Contact form
+  const form = document.getElementById('contact-form');
   const popup = document.getElementById('popup');
 
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
 
-    const formData = new FormData(form);
-
-    fetch('https://formspree.io/f/xldldeyz', {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      if (response.ok) {
-        popup.style.display = 'block';
-        form.reset();
-      } else {
-        alert("Oops! Something went wrong.");
-      }
-    })
-    .catch(error => {
-      console.error("Error:", error);
-      alert("Network error. Try again.");
+      fetch('https://formspree.io/f/xldldeyz', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+        .then(response => {
+          if (response.ok) {
+            popup.style.display = 'block';
+            form.reset();
+          } else {
+            alert("Oops! Something went wrong.");
+          }
+        })
+        .catch(() => alert("Network error. Try again."));
     });
-  });
+  }
 
   function closePopup() {
     document.getElementById('popup').style.display = 'none';
-    window.location.href = "#home"; // or use window.scrollTo(0, 0);
+    window.location.href = "#home";
   }
 
+  // Mobile nav
+  document.querySelector('.mobile-nav-toggle')?.addEventListener('click', () => {
+    document.querySelector('nav').classList.add('show');
+    document.querySelector('.close-menu').classList.add('show');
+    document.body.style.overflow = 'hidden';
+  });
 
-        // Create stars in the background
-        function createStars() {
-            const stars = document.getElementById('stars');
-            const count = 100;
-            
-            for (let i = 0; i < count; i++) {
-                const star = document.createElement('div');
-                star.classList.add('star');
-                
-                // Random position
-                const x = Math.random() * 100;
-                const y = Math.random() * 100;
-                
-                // Random animation duration and delay
-                const duration = 3 + Math.random() * 4;
-                const delay = Math.random() * 5;
-                
-                star.style.left = `${x}%`;
-                star.style.top = `${y}%`;
-                star.style.setProperty('--duration', `${duration}s`);
-                star.style.setProperty('--delay', `${delay}s`);
-                
-                stars.appendChild(star);
-            }
-        }
+  document.querySelector('.close-menu')?.addEventListener('click', () => {
+    document.querySelector('nav').classList.remove('show');
+    document.querySelector('.close-menu').classList.remove('show');
+    document.body.style.overflow = 'auto';
+  });
 
-        // Initialize stars
-        window.addEventListener('DOMContentLoaded', createStars);
-    </script>
+  document.querySelectorAll('#nav-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 991) {
+        document.querySelector('nav').classList.remove('show');
+        document.querySelector('.close-menu').classList.remove('show');
+        document.body.style.overflow = 'auto';
+      }
+    });
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href'))?.scrollIntoView({
+        behavior: 'smooth'
+      });
+      document.getElementById('nav-menu')?.classList.remove('active');
+    });
+  });
+
+  // Init on load
+  document.addEventListener('DOMContentLoaded', () => {
+    createStars();
+    type();
+    animateCounters();
+    animateTimeline();
+
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    timelineItems.forEach(item => {
+      item.style.opacity = '0';
+      item.style.transform = 'translateX(50px)';
+      item.style.transition = 'all 0.5s ease';
+    });
+
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .timeline-item.show {
+        opacity: 1 !important;
+        transform: translateX(0) !important;
+      }
+    `;
+    document.head.appendChild(style);
+  });
+
+  // Scroll trigger
+  window.addEventListener('scroll', () => {
+    animateCounters();
+    animateTimeline();
+  });
+</script>
+
+
 </body>
 </html>
