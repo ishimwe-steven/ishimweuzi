@@ -758,156 +758,235 @@
 
         /* RESUME SECTION */
        
-
-
 .resume-content {
-    display: flex;
-    gap: 3rem;
-    align-items: flex-start;
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Allow stacking on smaller screens */
 }
 
 .resume-text {
-    flex: 1;
+  flex: 1;
+  min-width: 280px;
 }
 
 .resume-text p {
-    margin-bottom: 2rem;
-    color: var(--text-secondary);
-    font-size: 1.8rem;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: 1.8rem;
 }
 
 .stats-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 4rem;
-    gap: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allows stacking */
 }
 
 .stat-item {
-    text-align: center;
-    flex: 1;
-    padding: 2rem;
-    background: rgba(18, 18, 42, 0.5);
-    border-radius: var(--border-radius-md);
-    box-shadow: var(--shadow-soft);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: var(--transition-fast);
+  text-align: center;
+  flex: 1 1 200px;
+  padding: 2rem;
+  background: rgba(18, 18, 42, 0.5);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-soft);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: var(--transition-fast);
 }
 
 .stat-item:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-strong);
-    border-color: rgba(0, 229, 255, 0.3);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-strong);
+  border-color: rgba(0, 229, 255, 0.3);
 }
 
 .stat-number {
-    font-family: var(--font-primary);
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
+  font-family: var(--font-primary);
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
 }
 
 .stat-label {
-    font-family: var(--font-secondary);
-    font-size: 1.6rem;
-    color: var(--text-secondary);
+  font-family: var(--font-secondary);
+  font-size: 1.6rem;
+  color: var(--text-secondary);
 }
 
 .timeline-container {
-    flex: 1;
+  flex: 1;
+  min-width: 280px;
 }
 
 .timeline-title {
-    font-family: var(--font-primary);
-    font-size: 2.4rem;
-    margin-bottom: 3rem;
-    position: relative;
-    display: inline-block;
+  font-family: var(--font-primary);
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
 }
 
 .timeline-title::after {
-    content: '';
-    position: absolute;
-    bottom: -1rem;
-    left: 0;
-    width: 4rem;
-    height: 0.3rem;
-    background: var(--gradient-primary);
-    border-radius: 5rem;
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 4rem;
+  height: 0.3rem;
+  background: var(--gradient-primary);
+  border-radius: 5rem;
 }
 
 .timeline {
-    position: relative;
-    padding-left: 3rem;
+  position: relative;
+  padding-left: 3rem;
 }
 
 .timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 0.2rem;
-    background: linear-gradient(to bottom, var(--primary-color), transparent);
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0.2rem;
+  background: linear-gradient(to bottom, var(--primary-color), transparent);
 }
 
 .timeline-item {
-    position: relative;
-    padding-bottom: 3rem;
+  position: relative;
+  padding-bottom: 3rem;
 }
 
 .timeline-dot {
-    position: absolute;
-    left: -3.1rem;
-    top: 0;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    background: var(--gradient-primary);
-    box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+  position: absolute;
+  left: -3.1rem;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
 }
 
 .timeline-date {
-    font-family: var(--font-primary);
-    font-size: 1.4rem;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
 .timeline-content {
-    box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
-    background: rgba(18, 18, 42, 0.5);
-    border-radius: var(--border-radius-md);
-    padding: 2rem;
-    
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    transition: var(--transition-fast);
+  box-shadow: 0 4px 15px rgba(0, 255, 255, 0.1);
+  background: rgba(18, 18, 42, 0.5);
+  border-radius: var(--border-radius-md);
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: var(--transition-fast);
 }
 
 .timeline-content:hover {
-    transform: translateY(-5px);
-   
+  transform: translateY(-5px);
 }
 
 .timeline-content h4 {
-    font-family: var(--font-primary);
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-   color: #194b4f;
-            background: linear-gradient(to right, #194b4f, #33fffc, #194b4f);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(to right, #194b4f, #33fffc, #194b4f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.timeline-content h5{
-    margin-left: 8rem;
-    padding-bottom: 12px;
-    font-size: 15px;
+
+.timeline-content h5 {
+  margin-left: 8rem;
+  padding-bottom: 12px;
+  font-size: 15px;
 }
+
 .timeline-content p {
-    color: var(--text-secondary);
-    font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+}
+
+/* --------------------- */
+/* ✅ Responsive Fixes */
+/* --------------------- */
+
+@media (max-width: 991px) {
+  .resume-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .stats-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat-item {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .timeline {
+    padding-left: 2rem;
+  }
+
+  .timeline-dot {
+    left: -2.5rem;
+  }
+
+  .timeline-content h5 {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .resume-text p {
+    font-size: 1.5rem;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+  }
+
+  .stat-label {
+    font-size: 1.4rem;
+  }
+
+  .timeline-title {
+    font-size: 2rem;
+  }
+
+  .timeline-date {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content {
+    padding: 1.5rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.75rem;
+  }
+
+  .timeline-dot {
+    width: 1.5rem;
+    height: 1.5rem;
+    left: -2rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content h5 {
+    font-size: 13px;
+    margin-left: 0.5rem;
+  }
 }
 
         /* MY SKILLS SECTION */
